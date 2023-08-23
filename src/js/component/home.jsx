@@ -1,26 +1,43 @@
+
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+	<div className="p-5 bg-primary">
+	<div id="container" className="p-2 p-0">
+	        <div className="container">
+	        	<div className="todoapp stack-large">
+				<h1 class="todo-header">To do List</h1>
+				    <div id="add" className="search">
+                            <input
+                            id="addToDo"
+                            type="text"
+                            name="text"
+							style={{width:"260px"}}
+                            />
+                            <button id="boton" type="submit" className="btn-add btn">
+                            Add
+                            </button>
+                    </div>
+	        		<div className="py-1"> 
+                        <ul id="myList"
+                            role="list"
+                            className="todo-list stack-large stack-exception"
+                            aria-labelledby="list-heading">
+                        </ul>
+                        <div class="empty">
+                            <p>No tienes tareas pendientes.</p>
+                        </div>
+		            </div>
+	        	</div>
+	        </div>
+    </div>
+	</div>
 	);
 };
 
 export default Home;
+
+
+// 
+
